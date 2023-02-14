@@ -1,0 +1,55 @@
+.NewsOneMainImg {
+    // // size: cover;
+    // // z-index: -1;
+    // position: relative;
+    // // width: 100%;
+    // // height: 20vh;
+    // // display: grid;
+    // grid-template-columns: repeat(40, 5fr);
+    // grid-template-rows: repeat(10, 4fr);
+    // // background: #575454;
+    // // filter: saturate(1);
+}
+
+.NewsOneMAIN {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c4bebe;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    .NewsOneLeft{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(76, 89, 84);
+        // padding: 20px;
+
+        .NewsOneLeftTitle{
+            background-color: #414554;
+            padding: 20px;
+        }
+        .date {
+            background-color: #5b627b;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .article {
+            padding: 20px;
+        }
+    }
+
+    .NewsOneRight{
+        border: 2px solid ; 
+        border-width: 3px;
+        border-radius: 10px;
+        border-color: #575454;
+        padding: 20px;
+    }
+    
+    .listTitle{
+        color: #414554;
+
+    }
+
+}

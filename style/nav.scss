@@ -1,0 +1,521 @@
+// 記得先按下面的SASS WATCH
+
+$primary-color:#c4bebe;
+// $accent-color:;
+$text-color:white;
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color;
+  background: $primary-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background-color: $primary-color;
+
+  ul {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    p.logo {
+      display: block;
+      margin: 1rem 2rem;
+      //   left: 1px;
+    }
+
+    p.favorite,
+    p.login {
+      display: block;
+      color: white;
+      margin: 1rem 2rem;
+    }
+
+    //三個選項
+    div.choices {
+      display: flex;
+      margin: auto;
+    }
+
+    li.choice {
+      width: 150px;
+      height: 50px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      background-color: white;
+
+      p {
+        color: black;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      margin-right: 1rem;
+
+      //第一層選項
+      ul.b1 {
+        color: black;
+        display: none;
+        position: absolute;
+        top: 50px;
+        list-style-type: none;
+        font-size: 20px;
+        width: 150px;
+        border: 1px black solid;
+        border-radius: 5px;
+        background-color: white;
+
+        li {
+          a {
+            color: black;
+          }
+
+          text-align: center;
+        }
+
+        li:hover {
+          a {
+            color: $text-color;
+          }
+
+          background-color: #000000;
+          color: white;
+        }
+      }
+    }
+
+    //li hover效果
+    li:hover>a>p {
+      text-decoration: underline;
+    }
+
+    li:hover>ul.b1 {
+      display: block;
+    }
+  }
+}
+
+
+// 以下要改語法
+
+
+// 動態背景background
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.bgAnimation {
+  background-size: cover;
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(40, 5fr);
+  grid-template-rows: repeat(10, 4fr);
+  background: #575454;
+  filter: saturate(1);
+  // overflow: hidden;
+}
+
+.colorBox {
+  z-index: 5;
+  filter: brightness(1.1);
+  transition: 2s ease;
+  position: relative;
+  margin: 0.5px;
+  background: #1d1d1d;
+}
+
+
+
+
+
+
+
+
+// 大標題的兩邊背景
+.loudou {
+  z-index: -1;
+  margin-top: -250px;
+  width: 100%;
+  height: 10px;
+  background-color: #b1032600;
+  border-top: 150px solid #b1032600;
+  border-bottom: 50px solid #b1032600;
+  border-left: 50px solid $primary-color;
+  border-right: 50px solid $primary-color;
+  // margin-left: 50px;
+  // margin-top: 20px;
+}
+
+.loudou2 {
+  position: absolute;
+  z-index: -1;
+  margin-top: -80px;
+  width: 100%;
+  height: 50px;
+  background-color: #b1032600;
+  border-top: 50px solid #b1032600;
+  border-bottom: 50px solid $primary-color;
+  border-left: 50px solid #5f5c5c;
+  border-right: 50px solid #5f5c5c;
+  // margin-left: 50px;
+  // margin-top: 20px;
+}
+
+
+// 讓文字大標題可以動起來：
+// @mixin keyframes($animationName) {
+//   @-webkit-keyframes #{$animationName} {
+//     @content;
+//   }
+
+//   @-moz-keyframes #{$animationName} {
+//     @content;
+//   }
+
+//   @-o-keyframes #{$animationName} {
+//     @content;
+//   }
+
+//   @keyframes #{$animationName} {
+//     @content;
+//   }
+// }
+
+// 設定文字大標題動的方法或方向
+// @include keyframes(animationName) {
+//   0% {
+//     transform: translateX(-25%);
+//     // left: 120%;
+//   }
+
+//   100% {
+//     transform: translateX(0%);
+//     // left: -20%;
+//   }
+// }
+
+// @include keyframes(animationName2) {
+//   0% {
+//     transform: translateX(25%);
+//     // left: 120%;
+//   }
+
+//   100% {
+//     transform: translateX(0%);
+//     // left: -20%;
+//   }
+// }
+
+// 文字大標題：聯絡我們 | 常見問題
+.title {
+  font-weight: map-get($font-weights, "bold");
+  // text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+  background-color: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 6px 6px;
+  font-size: 3rem;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  padding: -10px;
+  margin-top: -250px;
+  color: #e2f10aef;
+  display: flex;
+  justify-content: center;
+  // background: linear-gradient(90deg, transparent 50%, #000 50%, #000 100%);
+  animation: animationName 2s linear forwards;
+}
+
+// 聯絡我們 | 常見問題
+
+.title2 {
+  font-weight: map-get($font-weights, "bold");
+  background-color: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+  font-size: 3rem;
+  position: absolute;
+  width: 100%;
+  margin-top: -250px;
+  color: #23527b8d;
+  display: flex;
+  justify-content: center;
+  // background: linear-gradient(90deg, transparent 50%, #000 50%, #000 100%);
+  animation: animationName2 2s linear forwards;
+
+}
+
+
+
+// qa.html
+// id屬性要用 function(){} 筆記練習：
+@mixin aBt() {
+  display: inline;
+  // width: 100px;
+  justify-content: center;
+}
+
+
+// qa.html的個別零件問題區塊
+// table
+.tab-demo {
+  background-color: $primary-color;
+  padding: 50px;
+}
+
+.tab-title {
+  display: flex;
+  list-style: none;
+  display: flex;
+  // width: 100px;
+  justify-content: center;
+
+}
+
+.tab-title li {
+  padding: 10px;
+}
+
+.tab-title li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  background-color: #ccc;
+  text-decoration: none;
+}
+
+.tab-title li.active a {
+  color: $text-color;
+  background-color: #1c80c2;
+}
+
+.tab-inner {
+  padding: 10px;
+  border: 1px solid #5d5959;
+}
+
+.tab-inner2 {
+  padding: 10px;
+  border: 1px solid #1f1a1a;
+}
+
+
+
+// contact_main.html：
+
+.contact_card {
+
+  // margin-top: 50px; 加了這行會出現格紋!!!!!!!!
+  background-color: #1d1d1d;
+  display: flex;
+  // margin: 10px;
+  justify-content: space-around;
+}
+
+.contact_card1 {
+  width: 250px;
+  background-color: #1d1d1d;
+  display: inline-block;
+  padding: 40px;
+  // margin-block-start: 15px;
+  text-align: center;
+}
+
+.contact_card1:hover {
+  width: 250px;
+  background-color: #5d5959;
+  display: inline-block;
+  padding: 40px;
+  // margin-block-start: 15px;
+  text-align: center;
+}
+
+.contact_card2 {
+  width: 250px;
+  background-color: #1d1d1d;
+  display: inline-block;
+  padding: 40px;
+  // margin-block-start: 15px;
+  text-align: center;
+}
+
+.contact_card2:hover {
+  width: 250px;
+  background-color: #5d5959;
+  display: inline-block;
+  padding: 40px;
+  // margin-block-start: 15px;
+  text-align: center;
+}
+
+.contact_card3 {
+  width: 250px;
+  background-color: #1d1d1d;
+  display: inline-block;
+  padding: 40px;
+  // margin-block-start: 15px;
+  text-align: center;
+}
+
+.contact_card3:hover {
+  width: 250px;
+  background-color: #5d5959;
+  display: inline-block;
+  padding: 40px;
+  // margin-block-start: 15px;
+  text-align: center;
+}
+
+.bottom1 {
+  height: 45px;
+  background-color: #5d5959;
+}
+
+.bottom2 {
+  height: 50px;
+  background-color: #5d5959;
+}
+
+// contact_email.html：備註聯絡方式
+.attenion {
+  margin-top: 10px;
+  font-size: 20px;
+  height: 90px;
+  background-color: #c4bebe;
+  color: $text-color;
+  text-align: center;
+}
+
+
+// contact_email.html：問卷上傳填表區塊
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #c4bebe;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 8px solid #c4bebe;
+  border-radius: 20px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 25px rgba(0, 0, 0, 0.45),
+}
+
+.inputMain {
+  // text-align: start;
+  display: inline;
+  justify-content: center;
+  padding-right: 60%;
+  border-radius: 15px;
+  margin: 8px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35),
+}
+
+.NameEmail{
+  display: flex;
+  margin-left: 20px;
+  color: #000000;
+  letter-spacing: 2px;
+
+}
+.submitEmail{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+// footer頁尾設定：
+#footer {
+  padding: 20px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(68, 70, 70);
+}
+
+#footer>#L {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background-color: #2b2b22;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#footer>#K {
+  margin-top: -45px;
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background-color: #007ced;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#footer p {
+  padding-top: 5px;
+}
+
+#footer h6 {
+  padding-top: 5px;
+}
+// footer頁尾設定------|
+
+

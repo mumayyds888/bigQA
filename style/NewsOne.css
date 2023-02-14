@@ -1,0 +1,35 @@
+.NewsOneMAIN {
+  display: flex;
+  justify-content: space-around;
+  background-color: #c4bebe;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.NewsOneMAIN .NewsOneLeft {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(76, 89, 84);
+}
+.NewsOneMAIN .NewsOneLeft .NewsOneLeftTitle {
+  background-color: #414554;
+  padding: 20px;
+}
+.NewsOneMAIN .NewsOneLeft .date {
+  background-color: #5b627b;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.NewsOneMAIN .NewsOneLeft .article {
+  padding: 20px;
+}
+.NewsOneMAIN .NewsOneRight {
+  border: 2px solid;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #575454;
+  padding: 20px;
+}
+.NewsOneMAIN .listTitle {
+  color: #414554;
+}/*# sourceMappingURL=NewsOne.css.map */

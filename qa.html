@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./style/nav.css" />
+  <link rel="stylesheet" type="text/css" href="./style/qalist.css" />
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <div>
+    <nav>
+      <ul>
+        <p class="logo">LOGO is here</p>
+        <div class="choices">
+          <li class="choice">
+            <a href="">
+              <p>電腦元件介紹</p>
+            </a>
+            <ul class="b1">
+              <li><a href="">CPU</a></li>
+              <li><a href="">顯示卡</a></li>
+              <li><a href="">RAM</a></li>
+              <li><a href="">硬碟</a></li>
+              <li><a href="">其他組件</a></li>
+            </ul>
+          </li>
+          <li class="choice">
+            <a href="">
+              <p>筆電客製化</p>
+            </a>
+            <ul class="b1">
+              <li><a href="">自己選配</a></li>
+              <li><a href="">由我們推薦</a></li>
+            </ul>
+          </li>
+          <li class="choice">
+            <a href="">
+              <p>服務與支援</p>
+            </a>
+            <ul class="b1">
+              <li><a href="">最新消息</a></li>
+              <li><a href="">常見問題</a></li>
+              <li><a href="">聯絡我們</a></li>
+            </ul>
+          </li>
+        </div>
+        <p class="favorite">收藏</p>
+        <p class="login">會員登入</p>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- 背景 -->
+  <div class="bgAnimation" id="bgAnimation">
+    <!-- <div class="backgroundAmim"></div> -->
+  </div>
+
+  <!-- 標題 -->
+  <h1 class="title">常見問題</h1>
+  <h1 class="title2">常見問題</h1>
+
+
+  <!-- <div class="text">漏斗</div> -->
+  <div class="loudou"></div>
+
+  <!-- <div class="text">漏斗2</div> -->
+  <div class="loudou2"></div>
+
+  <!-- 分隔線 -->
+  <hr>
+  <hr>
+  <hr>
+
+  <!-- 四大零件選單 -->
+  <div class="qalistTitle">
+    <ul class="qalistTitleUl">
+      <li class="active">
+        <a href="javascript:;" data-tablink="qaone">CPU</a>
+      </li>
+      <li class="active">
+        <a href="javascript:;" data-tablink="qatwo">顯示卡</a>
+      </li>
+      <li class="active">
+        <a href="javascript:;" data-tablink="qathree">記憶體</a>
+      </li>
+      <li class="active">
+        <a href="javascript:;" data-tablink="qafour">其他</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 四大零件問題內容 -->
+  <div class="qalistBody">
+    <div class="qalistBodyInner" id="qaone">
+      <div>
+        <h3 onclick="switch_content('first')">內容1 內容1 內容1 內容1</h3>
+        <div id="first">
+          <p>內容1 內容1 內容1 內容1</p>
+          <p>內容1 內容1 內容1 內容1</p>
+          <p>內容1 內容1 內容1 內容1</p>
+        </div>
+      </div>
+      <div>
+        <h3 onclick="switch_content('first2')">內容1 內容1 內容1 內容1</h3>
+        <div id="first2">
+          <p>內容1 內容1 內容1 內容1</p>
+          <p>內容1 內容1 內容1 內容1</p>
+          <p>內容1 內容1 內容1 內容1</p>
+        </div>
+      </div>
+    </div>
+    <div class="qalistBodyInner" id="qatwo">
+      <div>
+        <h3 onclick="switch_content('second')">內容2 內容2 內容2 內容2</h3>
+        <div id="second">
+          <p>內容2 內容2 內容2 內容2</p>
+          <p>內容2 內容2 內容2 內容2</p>
+          <p>內容2 內容2 內容2 內容2</p>
+        </div>
+      </div>
+      <div>
+        <h3 onclick="switch_content('second2')">內容2 內容2 內容2 內容2</h3>
+        <div id="second2">
+          <p>內容2 內容2 內容2 內容2</p>
+          <p>內容2 內容2 內容2 內容2</p>
+          <p>內容2 內容2 內容2 內容2</p>
+        </div>
+      </div>
+    </div>
+    <div class="qalistBodyInner" id="qathree">
+      <div>
+        <h3 onclick="switch_content('third')">內容3 內容3 內容3 內容3</h3>
+        <div id="third">
+          <p>內容3 內容3 內容3 內容3</p>
+          <p>內容3 內容3 內容3 內容3</p>
+          <p>內容3 內容3 內容3 內容3</p>
+        </div>
+      </div>
+      <div>
+        <h3 onclick="switch_content('third2')">內容3 內容3 內容3 內容3</h3>
+        <div id="third2">
+          <p>內容3 內容3 內容3 內容3</p>
+          <p>內容3 內容3 內容3 內容3</p>
+          <p>內容3 內容3 內容3 內容3</p>
+        </div>
+      </div>
+    </div>
+    <div class="qalistBodyInner" id="qafour">
+      <div>
+        <h3 onclick="switch_content('fourth')">內容4 內容4 內容4 內容4</h3>
+        <div id="fourth">
+          <p>內容4 內容4 內容4 內容4</p>
+          <p>內容4 內容4 內容4 內容4</p>
+          <p>內容4 內容4 內容4 內容4</p>
+        </div>
+      </div>
+      <div>
+        <h3 onclick="switch_content('fourth2')">內容4 內容4 內容4 內容4</h3>
+        <div id="fourth2">
+          <p>內容4 內容4 內容4 內容4</p>
+          <p>內容4 內容4 內容4 內容4</p>
+          <p>內容4 內容4 內容4 內容4</p>
+        </div>
+      </div>
+      <div>
+        <h3 onclick="switch_content('fourth3')">內容4 內容4 內容4 內容4</h3>
+        <div id="fourth3">
+          <p>內容4 內容4 內容4 內容4</p>
+          <p>內容4 內容4 內容4 內容4</p>
+          <p>內容4 內容4 內容4 內容4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 按鈕切換 JQ 要換成JS-->
+  <script>
+    $(document).ready(function () {
+      qaListChange()
+    })
+
+    function qaListChange() {
+      //抓出li.active的data-tablink的內容;例如是"one"
+      var qalistLink = $(".qalistTitleUl .active").find("a").data("tablink");
+
+      //將$("#qaone").顯示，而其他兄弟們(叫做.qalistBodyInner)都隱藏
+      $('#' + qalistLink).show().siblings(".qalistBodyInner").hide();
+
+
+      //當四大零件選單"標題 li"被點到時，
+      $(".qalistTitleUl li").click(function () {
+
+        //抓出當下被點到的data-tablink的內容;例如是"Two",將$("#Two").顯示，而其他兄弟們(叫做.qalistBodyInner)都隱藏
+        $('#' + $(this).find("a").data("tablink")).show().siblings(".qalistBodyInner").hide();
+
+        //抓出當下被點到的li要加上active(藍色)
+        $(this).addClass("active").siblings(".active");
+      });
+    }
+  </script>
+
+  <!-- 隱藏與顯示內容JS -->
+  <script>
+    window.onload = function () { hide_all(); };
+
+    function switch_content(str) {
+      var obj = document.getElementById(str);
+
+      if (obj.style.display == 'none') {
+        obj.style.display = 'block';
+      } else {
+        obj.style.display = 'none';
+      }
+    }
+
+    function hide_all() {
+      document.getElementById('first').style.display = 'none';
+      document.getElementById('first2').style.display = 'none';
+      document.getElementById('second').style.display = 'none';
+      document.getElementById('second2').style.display = 'none';
+      document.getElementById('third').style.display = 'none';
+      document.getElementById('third2').style.display = 'none';
+      document.getElementById('fourth').style.display = 'none';
+      document.getElementById('fourth2').style.display = 'none';
+      document.getElementById('fourth3').style.display = 'none';
+    }
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- tab標籤列 -->
+  <!-- <div class="tab-demo">
+    <ul class="tab-title">
+      <li class="active">
+        <a href="javascript:;" data-tablink="one">CPU</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-tablink="two">顯示卡</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-tablink="three">記憶體</a>
+      </li>
+      <li>
+        <a href="javascript:;" data-tablink="three">其他</a>
+      </li>
+    </ul> -->
+
+  <!-- tab內容 -->
+  <!-- <div class="tab-inner-wrap">
+      <div id="one" class="tab-inner"> -->
+  <!-- tab1的內容 -->
+  <!-- <h3>內容1 內容1 內容1 內容1</h3>
+        <p>內容1 內容1 內容1 內容1</p>
+        <p>內容1 內容1 內容1 內容1</p>
+        <p>內容1 內容1 內容1 內容1</p>
+      </div>
+      <div id="two" class="tab-inner"> -->
+  <!-- tab2的內容 -->
+  <!-- <h3>內容2 內容2 內容2 內容2</h3>
+        <p>內容2 內容2 內容2 內容2</p>
+        <p>內容2 內容2 內容2 內容2</p>
+        <p>內容2 內容2 內容2 內容2</p>
+      </div>
+      <div id="three" class="tab-inner"> -->
+  <!-- tab3的內容 -->
+  <!-- <h3>內容3 內容3 內容3 內容3</h3>
+        <p>內容3 內容3 內容3 內容3</p>
+        <p>內容3 內容3 內容3 內容3</p>
+        <p>內容3 內容3 內容3 內容3</p>
+      </div>
+    </div>
+  </div> -->
+
+  <script>
+
+    // 準備好tabCutover1()  這個function去執行：
+    // $(document).ready(function () {
+    //   tab1();
+    // });
+
+    // function tab1() {
+
+      //抓出li.active的data-tablink的內容;例如是"one"
+      // var tablink = $(".tab-title .active").find("a").data("tablink");
+
+      //將$("#one").顯示，而其他兄弟們(叫做.tab-inner)都隱藏
+      // $('#' + tablink).show().siblings(".tab-inner").hide();
+
+      // $('#' + tablink).show().siblings(".tab-inner2").hide();
+
+      //當tab標題li被點到時，
+      // $(".tab-title li").click(function () {
+
+        //抓出當下被點到的data-tablink的內容;例如是"Two",將$("#Two").顯示，而其他兄弟們(叫做.tab-inner)都隱藏
+        // $('#' + $(this).find("a").data("tablink")).show().siblings(".tab-inner").hide();
+
+        //抓出當下被點到的li要加上active(藍色)，其他li則要刪除active(藍色)
+        // $(this).addClass("active").siblings(".active").removeClass("active");
+      // });
+    // }
+  </script>
+  <!-- ----------------------------------------------------------------- -->
+
+  <footer id="footer">
+    <i id="L" class="fa-solid fa-l"></i>
+    <i id="K" class="fa-solid fa-k"></i>
+    <p>Welcome to the LAPTOP.</p>
+    <h6>LAPTOP's Website © 2023 Copyright</h6>
+  </footer>
+
+  <!-- 電腦元件背景 -->
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- jquery 頁面切換 -->
+
+<!-- How To Swap Image In Click Using JQUERY -->
+<!-- 資料來源：https://www.youtube.com/watch?v=Dh6uQuRgZ0g -->

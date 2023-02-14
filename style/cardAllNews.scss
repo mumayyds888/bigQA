@@ -1,0 +1,185 @@
+
+
+.cardAllNews0 {
+    // 一層
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    // overflow: hidden;
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-around;
+    // align-items: center;
+    background-color: #c4bebe ;
+
+    // <!-- 二層之一 -->
+    .cardAllNews1 {
+        width: 200px;
+        color: black;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-gap: 5px;
+        font-size: 1rem;
+
+        img {
+            background-color: rgb(66, 64, 64);
+            height: 20vh;
+        }
+
+        .imageAllNews12 {
+            background-color: rgb(167, 160, 150);
+            width: fit-content;
+        }
+
+        .imageAllNews13 {
+            background-color: rgb(110, 118, 134);
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            width: min-content;     
+            background-color: rgb(116, 122, 120);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            float: right;
+            padding: 3px;
+            // padding-left: 2px;
+            // padding-right: 4px;
+            margin-left: 150px;
+        }
+
+    }
+
+    // <!-- 二層之二 -->
+    .cardAllNews2 {
+        width: 200px;
+        color: black;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-gap: 5px;
+        font-size: 1rem;
+
+        img {
+            background-color: rgb(66, 64, 64);
+            height: 20vh;
+        }
+
+        .imageAllNews22 {
+            background-color: rgb(167, 160, 150);
+            width: fit-content;
+        }
+
+        .imageAllNews23 {
+            background-color: rgb(110, 118, 134);
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            width: min-content;     
+            background-color: rgb(116, 122, 120);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            float: right;
+            padding: 3px;
+            // padding-left: 2px;
+            // padding-right: 4px;
+            margin-left: 150px;
+        }
+
+    }
+
+    // <!-- 二層之三 -->
+    .cardAllNews3 {
+        width: 200px;
+        color: black;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-gap: 5px;
+        font-size: 1rem;
+
+        img {
+            background-color: rgb(66, 64, 64);
+            height: 20vh;
+        }
+
+        .imageAllNews32 {
+            background-color: rgb(167, 160, 150);
+            width: fit-content;
+        }
+
+        .imageAllNews33 {
+            background-color: rgb(110, 118, 134);
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            width: min-content;     
+            background-color: rgb(116, 122, 120);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            float: right;
+            padding: 3px;
+            // padding-left: 2px;
+            // padding-right: 4px;
+            margin-left: 150px;
+        }
+
+    }
+
+    // <!-- 二層之四 -->
+    .cardAllNews4 {
+        width: 200px;
+        color: black;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-gap: 5px;
+        font-size: 1rem;
+
+        img {
+            background-color: rgb(66, 64, 64);
+            height: 20vh;
+        }
+
+        .imageAllNews42 {
+            background-color: rgb(167, 160, 150);
+            width: fit-content;
+        }
+
+        .imageAllNews43 {
+            background-color: rgb(110, 118, 134);
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            width: min-content;     
+            background-color: rgb(116, 122, 120);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            float: right;
+            padding: 3px;
+            // padding-left: 2px;
+            // padding-right: 4px;
+            margin-left: 150px;
+        }
+
+    }
+
+
+}
+

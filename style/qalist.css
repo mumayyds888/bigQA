@@ -1,0 +1,34 @@
+.qalistTitle {
+  background-color: #c4bebe;
+  display: flex;
+  justify-content: center;
+}
+.qalistTitle .qalistTitleUl {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+.qalistTitle .qalistTitleUl .active {
+  margin: 10px;
+}
+.qalistTitle .qalistTitleUl .active a {
+  color: rgb(1, 35, 35);
+  text-decoration: none;
+  background-color: #6d6666;
+  padding: 10px;
+}
+.qalistTitle .qalistTitleUl .active a:hover {
+  color: rgb(254, 226, 8);
+}
+
+.qalistBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6d6666;
+}
+.qalistBody .qalistBodyInner {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=qalist.css.map */
